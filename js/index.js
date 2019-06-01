@@ -15,18 +15,16 @@ document.getElementById('add').addEventListener('click', function(a) {
       newBtn.className="newbtns"
       newBtn.addEventListener('click', function() {
         container.removeChild(newItem)
-        count=count-1
+        console.log(container.childNodes.length)
         //newBtn.parentNode.removeChild(newBtn)
-        if (count===0){
+        if (container.childNodes.length<=1){
           clear.style.display= "None"
         }
     })
+
       newItem.appendChild(newBtn);
-      console.log(newItem)
-      console.log(container)
       container.prepend(newItem)
       check=document.getElementById("box")
-      console.log(newItem.childNodes)
       check.addEventListener('change', function() {
         if(this.checked) {
           // Checkbox is checked..
