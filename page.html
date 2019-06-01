@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>my to do list</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="all">
+    <h1 class="display-2 text-center">My to do list</h1>
+    <p class="lead text-center"> Welcome to my to do list</p>
+    <div class="row">
+      <form id="form" class="col-lg-6 col-8 mx-auto">
+        <div class="input-group">
+          <input id="input-item" class="form-control" placeholder="My to do is..."/>
+          <span>
+            <button id="add" type="button" class="btn btn-primary">ADD</button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div id="list" class="list col-lg-6 col-8 mx-auto">
+      </div>
+    </div>
+    <div class="row">
+      <button id="btnClr" type="button" class="btn btn-primary mx-auto btnHide"> clean</button>
+    </div>
+  <script src="js/index.js"></script>
+  <script type="text/javascript"  color="255, 255, 255" count="200" pointColor="255, 255,255" src="dist/canvas-nest.js"></script>
+</body>
+</html>
